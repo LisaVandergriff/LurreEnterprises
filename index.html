@@ -3,7 +3,86 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lurre Enterprises</title>
+    <meta name="theme-color" content="#130b08">
+    <meta name="description" content="Lurre Enterprises — coming soon.">
+    <title>Lurre Enterprises — Coming Soon</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Georgia, "Times New Roman", serif;
+        background: #130b08;
+        color: #f2e7d2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 280px;
+        min-height: 100vh;
+        min-height: 100svh;
+        margin: 0;
+        background:
+          radial-gradient(ellipse at 50% 48%, rgb(92 48 27 / 18%), transparent 54%),
+          #130b08;
+      }
+
+      main {
+        display: grid;
+        min-height: 100vh;
+        min-height: 100svh;
+        place-content: center;
+        justify-items: center;
+        padding: 2rem 1.5rem;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5.4vw, 4.1rem);
+        font-weight: 600;
+        letter-spacing: clamp(0.08em, 1.2vw, 0.12em);
+        line-height: 1.2;
+        text-indent: 0.12em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      p {
+        margin: 2.2rem 0 0;
+        color: #c9a96c;
+        font-size: clamp(0.8rem, 2.2vw, 1rem);
+        font-weight: 600;
+        letter-spacing: 0.34em;
+        line-height: 1.5;
+        text-indent: 0.34em;
+      }
+
+      p::before {
+        display: block;
+        width: 4rem;
+        height: 1px;
+        margin: 0 auto 1.5rem;
+        background: #84683d;
+        content: "";
+      }
+
+      @media (max-width: 420px) {
+        h1 {
+          font-size: clamp(1.45rem, 8.2vw, 2rem);
+          letter-spacing: 0.1em;
+          text-indent: 0.1em;
+          white-space: normal;
+        }
+
+        p {
+          margin-top: 1.8rem;
+          letter-spacing: 0.26em;
+          text-indent: 0.26em;
+        }
+      }
+    </style>
   </head>
   <body>
     <main>
